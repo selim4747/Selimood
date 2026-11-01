@@ -1,0 +1,19 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim haftalık ve yağmurlu gün rotaları",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Selim",
+      "Entries": {
+        "Mon": "610 {{ModId}}_SelimHouse 6 8 2/1030 Town 52 50 2 \"Strings\\schedules\\{{ModId}}_Selim:Mon.000\"/1500 Town 48 68 2/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "Tue": "610 {{ModId}}_SelimHouse 6 8 2/1100 Town 44 54 1 \"Strings\\schedules\\{{ModId}}_Selim:Tue.000\"/1500 Town 48 68 2/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "Wed": "610 {{ModId}}_SelimHouse 6 8 2/1000 Town 52 50 2 \"Strings\\schedules\\{{ModId}}_Selim:Wed.000\"/1500 Town 54 62 3/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "Thu": "610 {{ModId}}_SelimHouse 6 8 2/1100 Town 48 68 2 \"Strings\\schedules\\{{ModId}}_Selim:Thu.000\"/1500 Town 44 54 1/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "Fri": "610 {{ModId}}_SelimHouse 6 8 2/1030 Town 54 62 3 \"Strings\\schedules\\{{ModId}}_Selim:Fri.000\"/1500 Town 52 50 2/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "Sat": "610 {{ModId}}_SelimHouse 6 8 2/1000 Town 44 54 1 \"Strings\\schedules\\{{ModId}}_Selim:Sat.000\"/1600 Town 52 50 2/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "Sun": "610 {{ModId}}_SelimHouse 6 8 2/1100 Town 48 68 2 \"Strings\\schedules\\{{ModId}}_Selim:Sun.000\"/1500 Town 54 62 3/1700 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2",
+        "rain": "610 {{ModId}}_SelimHouse 6 8 2/1200 Town 52 50 2 \"Strings\\schedules\\{{ModId}}_Selim:Rain.000\"/1800 {{ModId}}_SelimFarm 19 14 2/2000 {{ModId}}_SelimHouse 6 6 2"
+      }
+    }
+  ]
+}

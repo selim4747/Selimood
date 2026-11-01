@@ -1,0 +1,13 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim hakkında kasaba mektupları",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "{{ModId}}_Selim_AbigailNote": "Selam @!^Selim dün bana yıldızların arasında geçen oyun fikrinden bahsetti. Normalde böyle şeyleri kendi içinde tutarmış. Onu heyecanla anlatırken görmek güzeldi. Umarım fikrini geliştirmeye devam eder!^^-Abigail[#]Abigail’den bir not",
+        "{{ModId}}_Selim_LeahNote": "Merhaba @!^Selim’in oyun tasarımı için çizdiği haritaları gördüm. Her adaya ayrı bir hikâye düşünmüş. İnsan bazen kendi kafasında kurduğu dünyayı paylaşınca, o dünya biraz daha gerçek oluyor.^Ona çalışmalarında destek olduğun için teşekkür ederim.^^-Leah[#]Leah’dan bir not"
+      }
+    }
+  ]
+}

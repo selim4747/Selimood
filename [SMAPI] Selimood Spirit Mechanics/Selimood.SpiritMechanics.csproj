@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Selimood.SpiritMechanics</AssemblyName>
+    <RootNamespace>Selimood.SpiritMechanics</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Set StardewPath to the folder containing StardewModdingAPI.dll and Stardew Valley.dll. -->
+  <PropertyGroup>
+    <StardewPath Condition="'$(StardewPath)' == ''">$(MSBuildProjectDirectory)/../../Stardew Valley</StardewPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="StardewModdingAPI">
+      <HintPath>$(StardewPath)/StardewModdingAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Stardew Valley">
+      <HintPath>$(StardewPath)/Stardew Valley.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

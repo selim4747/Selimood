@@ -1,0 +1,1033 @@
+{
+  "Changes": [
+    {
+      "LogName": "E25 prototip konumları",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_E25_Hub": {
+          "DisplayName": "E25 — Ruh Bahçesi",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 16
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_E25_Hub"
+          },
+          "CanPlantHere": true
+        },
+        "{{ModId}}_E25_Mine": {
+          "DisplayName": "Tenti Madeni",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 16
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_E25_Mine"
+          },
+          "CanPlantHere": false
+        },
+        "{{ModId}}_E25_Tomye": {
+          "DisplayName": "Tömye Köyü",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 16
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_E25_Tomye"
+          },
+          "CanPlantHere": false
+        },
+        "{{ModId}}_E25_Library": {
+          "DisplayName": "E25 Kütüphanesi",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 16
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_E25_Library"
+          },
+          "CanPlantHere": false
+        },
+        "{{ModId}}_E25_Heyer": {
+          "DisplayName": "Heyer Çiftliği",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 16
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_E25_Heyer"
+          },
+          "CanPlantHere": false
+        },
+        "{{ModId}}_E25_Entrance": {
+          "DisplayName": "Evren Girişi",
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 16
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_E25_Entrance"
+          },
+          "CanPlantHere": false,
+          "CanSleepHere": true
+        }
+      }
+    },
+    {
+      "LogName": "E25 E25_Hub haritası",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_E25_Hub",
+      "FromFile": "assets/maps/e25_hub.tmx"
+    },
+    {
+      "LogName": "E25 E25_Mine haritası",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_E25_Mine",
+      "FromFile": "assets/maps/e25_mine.tmx"
+    },
+    {
+      "LogName": "E25 E25_Tomye haritası",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_E25_Tomye",
+      "FromFile": "assets/maps/e25_tomye.tmx"
+    },
+    {
+      "LogName": "E25 E25_Library haritası",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_E25_Library",
+      "FromFile": "assets/maps/e25_library.tmx"
+    },
+    {
+      "LogName": "E25 E25_Heyer haritası",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_E25_Heyer",
+      "FromFile": "assets/maps/e25_heyer.tmx"
+    },
+    {
+      "LogName": "E25 E25_Entrance haritası",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_E25_Entrance",
+      "FromFile": "assets/maps/e25_entrance.tmx"
+    },
+    {
+      "LogName": "E25 dört Selim ve eş NPC tanımları",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_SelimAngry": {
+          "DisplayName": "Öfkeli Selim",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Hub",
+              "Tile": {
+                "X": 8,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_SelimThinking": {
+          "DisplayName": "Düşünen Selim",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Hub",
+              "Tile": {
+                "X": 23,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_SelimFearful": {
+          "DisplayName": "Korkak Selim",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Hub",
+              "Tile": {
+                "X": 38,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_SelimHappy": {
+          "DisplayName": "Mutlu Selim",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Heyer",
+              "Tile": {
+                "X": 36,
+                "Y": 12
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_SelimHappySpouse": {
+          "DisplayName": "Mutlu Selim’in Eşi",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Heyer",
+              "Tile": {
+                "X": 37,
+                "Y": 12
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageSaek": {
+          "DisplayName": "Saek",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 5,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageKaelan": {
+          "DisplayName": "Kaelan",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 17,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageFeil": {
+          "DisplayName": "Feil",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 29,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageL25": {
+          "DisplayName": "L25",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 41,
+                "Y": 11
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageYejen": {
+          "DisplayName": "Yejen",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 7,
+                "Y": 26
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageAfor": {
+          "DisplayName": "Afor",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 19,
+                "Y": 26
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_VillageNecale": {
+          "DisplayName": "Necale",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 39,
+                "Y": 26
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_Egir": {
+          "DisplayName": "Egir",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 40,
+                "Y": 27
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "{{ModId}}_Kyldo": {
+          "DisplayName": "Kyldo",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "spring",
+          "BirthDay": "1",
+          "HomeRegion": "Other",
+          "CanBeRomanced": false,
+          "SpouseAdopts": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_E25_Tomye",
+              "Tile": {
+                "X": 20,
+                "Y": 27
+              },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "E25 Angry statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_SelimAngry",
+      "FromFile": "assets/images/e25-angry-sprite.png"
+    },
+    {
+      "LogName": "E25 Thinking statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_SelimThinking",
+      "FromFile": "assets/images/e25-thinking-sprite.png"
+    },
+    {
+      "LogName": "E25 Fearful statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_SelimFearful",
+      "FromFile": "assets/images/e25-fearful-sprite.png"
+    },
+    {
+      "LogName": "E25 Happy statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_SelimHappy",
+      "FromFile": "assets/images/e25-happy-sprite.png"
+    },
+    {
+      "LogName": "E25 HappySpouse statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_SelimHappySpouse",
+      "FromFile": "assets/images/e25-happyspouse-sprite.png"
+    },
+    {
+      "LogName": "Beyaz Taş Parçası prototip eşyası",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_WhiteStonePiece": {
+          "Name": "{{ModId}}_WhiteStonePiece",
+          "DisplayName": "Beyaz Taş Parçası",
+          "Description": "E25’in derinliklerinde bulunan soluk bir taş parçası.",
+          "Type": "Basic",
+          "Category": -12,
+          "Price": 40,
+          "Texture": "TileSheets/Objects",
+          "SpriteIndex": 390,
+          "Edibility": -300
+        }
+      }
+    },
+    {
+      "LogName": "Tömye Saek statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageSaek",
+      "FromFile": "assets/images/e25-village-saek-sprite.png"
+    },
+    {
+      "LogName": "Tömye Kaelan statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageKaelan",
+      "FromFile": "assets/images/e25-village-kaelan-sprite.png"
+    },
+    {
+      "LogName": "Tömye Feil statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageFeil",
+      "FromFile": "assets/images/e25-village-feil-sprite.png"
+    },
+    {
+      "LogName": "Tömye L25 statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageL25",
+      "FromFile": "assets/images/e25-village-l25-sprite.png"
+    },
+    {
+      "LogName": "Tömye Yejen statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageYejen",
+      "FromFile": "assets/images/e25-village-yejen-sprite.png"
+    },
+    {
+      "LogName": "Tömye Afor statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageAfor",
+      "FromFile": "assets/images/e25-village-afor-sprite.png"
+    },
+    {
+      "LogName": "Tömye Necale statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_VillageNecale",
+      "FromFile": "assets/images/e25-village-necale-sprite.png"
+    },
+    {
+      "LogName": "Egir statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Egir",
+      "FromFile": "assets/images/e25-egir-sprite.png"
+    },
+    {
+      "LogName": "Kyldo statik sprite",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Kyldo",
+      "FromFile": "assets/images/e25-kyldo-sprite.png"
+    },
+    {
+      "LogName": "Ruh Bahçesi deneme dükkânı",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "E25GardenShop": {
+          "Items": [
+            {
+              "Id": "{{ModId}}_RuhSeed",
+              "Price": 1,
+              "Stock": -1
+            },
+            {
+              "Id": "{{ModId}}_TuhafRuhSeed",
+              "Price": 1,
+              "Stock": -1
+            }
+          ]
+        },
+        "SelimFarmFlowerShop": {
+          "Items": [
+            {
+              "Id": "{{ModId}}_RuhFlower",
+              "Price": 1,
+              "Stock": -1
+            },
+            {
+              "Id": "{{ModId}}_TuhafRuhFlower",
+              "Price": 1,
+              "Stock": -1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "E25 prototip bölge geçişleri",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_E25_Hub",
+      "AddWarps": [
+        "48 16 {{ModId}}_E25_Mine 2 15",
+        "25 31 {{ModId}}_E25_Tomye 25 1",
+        "1 16 {{ModId}}_E25_Library 20 1",
+        "45 5 {{ModId}}_E25_Heyer 4 16",
+        "25 1 {{ModId}}_E25_Entrance 21 11",
+        "46 14 {{ModId}}_SelimFarm 25 16"
+      ]
+    },
+    {
+      "LogName": "E25 çiftlik test girişi",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SelimFarm",
+      "AddWarps": [
+        "25 16 {{ModId}}_E25_Hub 46 14"
+      ]
+    },
+    {
+      "LogName": "E25 E25 dönüş bağlantıları",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_E25_Mine",
+      "AddWarps": [
+        "1 15 {{ModId}}_E25_Hub 47 16"
+      ]
+    },
+    {
+      "LogName": "E25 E25 dönüş bağlantıları",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_E25_Tomye",
+      "AddWarps": [
+        "25 0 {{ModId}}_E25_Hub 25 30"
+      ]
+    },
+    {
+      "LogName": "E25 E25 dönüş bağlantıları",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_E25_Library",
+      "AddWarps": [
+        "20 0 {{ModId}}_E25_Hub 2 16"
+      ]
+    },
+    {
+      "LogName": "E25 E25 dönüş bağlantıları",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_E25_Heyer",
+      "AddWarps": [
+        "4 15 {{ModId}}_E25_Hub 44 5"
+      ]
+    },
+    {
+      "LogName": "E25 E25 dönüş bağlantıları",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_E25_Entrance",
+      "AddWarps": [
+        "21 10 {{ModId}}_E25_Hub 25 2"
+      ]
+    },
+    {
+      "LogName": "SelimAngry placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SelimAngry",
+      "FromFile": "assets/images/e25-selimangry-portraits.png"
+    },
+    {
+      "LogName": "SelimThinking placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SelimThinking",
+      "FromFile": "assets/images/e25-selimthinking-portraits.png"
+    },
+    {
+      "LogName": "SelimFearful placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SelimFearful",
+      "FromFile": "assets/images/e25-selimfearful-portraits.png"
+    },
+    {
+      "LogName": "SelimHappy placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SelimHappy",
+      "FromFile": "assets/images/e25-selimhappy-portraits.png"
+    },
+    {
+      "LogName": "SelimHappySpouse placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_SelimHappySpouse",
+      "FromFile": "assets/images/e25-selimhappyspouse-portraits.png"
+    },
+    {
+      "LogName": "VillageSaek placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageSaek",
+      "FromFile": "assets/images/e25-villagesaek-portraits.png"
+    },
+    {
+      "LogName": "VillageKaelan placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageKaelan",
+      "FromFile": "assets/images/e25-villagekaelan-portraits.png"
+    },
+    {
+      "LogName": "VillageFeil placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageFeil",
+      "FromFile": "assets/images/e25-villagefeil-portraits.png"
+    },
+    {
+      "LogName": "VillageL25 placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageL25",
+      "FromFile": "assets/images/e25-villagel25-portraits.png"
+    },
+    {
+      "LogName": "VillageYejen placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageYejen",
+      "FromFile": "assets/images/e25-villageyejen-portraits.png"
+    },
+    {
+      "LogName": "VillageAfor placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageAfor",
+      "FromFile": "assets/images/e25-villageafor-portraits.png"
+    },
+    {
+      "LogName": "VillageNecale placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_VillageNecale",
+      "FromFile": "assets/images/e25-villagenecale-portraits.png"
+    },
+    {
+      "LogName": "Egir placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Egir",
+      "FromFile": "assets/images/e25-egir-portraits.png"
+    },
+    {
+      "LogName": "Kyldo placeholder portrait",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Kyldo",
+      "FromFile": "assets/images/e25-kyldo-portraits.png"
+    },
+    {
+      "LogName": "SelimAngry statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_SelimAngry",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "Tue": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "Wed": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "Thu": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "Fri": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "Sat": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "Sun": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2",
+        "rain": "610 {{ModId}}_E25_Hub 8 11 2/2200 {{ModId}}_E25_Hub 12 16 2/2400 {{ModId}}_E25_Hub 8 11 2"
+      }
+    },
+    {
+      "LogName": "SelimThinking statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_SelimThinking",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "Tue": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "Wed": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "Thu": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "Fri": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "Sat": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "Sun": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2",
+        "rain": "610 {{ModId}}_E25_Hub 23 11 2/900 {{ModId}}_E25_Library 20 14 2/1700 {{ModId}}_E25_Hub 23 11 2"
+      }
+    },
+    {
+      "LogName": "SelimFearful statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_SelimFearful",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "Tue": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "Wed": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "Thu": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "Fri": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "Sat": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "Sun": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2",
+        "rain": "610 {{ModId}}_E25_Hub 38 11 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Hub 38 11 2"
+      }
+    },
+    {
+      "LogName": "SelimHappy statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_SelimHappy",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "Tue": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "Wed": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "Thu": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "Fri": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "Sat": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "Sun": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2",
+        "rain": "610 {{ModId}}_E25_Heyer 36 12 2/900 {{ModId}}_E25_Heyer 22 22 2/1700 {{ModId}}_E25_Heyer 36 12 2"
+      }
+    },
+    {
+      "LogName": "SelimHappySpouse statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_SelimHappySpouse",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "Tue": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "Wed": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "Thu": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "Fri": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "Sat": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "Sun": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2",
+        "rain": "610 {{ModId}}_E25_Heyer 37 12 2/900 {{ModId}}_E25_Heyer 34 23 2/1700 {{ModId}}_E25_Heyer 37 12 2"
+      }
+    },
+    {
+      "LogName": "VillageSaek statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageSaek",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2",
+        "rain": "610 {{ModId}}_E25_Tomye 16 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 16 10 2"
+      }
+    },
+    {
+      "LogName": "VillageKaelan statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageKaelan",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2",
+        "rain": "610 {{ModId}}_E25_Tomye 39 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 39 10 2"
+      }
+    },
+    {
+      "LogName": "VillageFeil statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageFeil",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2"
+      }
+    },
+    {
+      "LogName": "VillageL25 statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageL25",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "rain": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2"
+      }
+    },
+    {
+      "LogName": "VillageYejen statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageYejen",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 8 26 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 26 2"
+      }
+    },
+    {
+      "LogName": "VillageAfor statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageAfor",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2",
+        "rain": "610 {{ModId}}_E25_Tomye 6 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 6 10 2"
+      }
+    },
+    {
+      "LogName": "VillageNecale statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_VillageNecale",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2",
+        "rain": "610 {{ModId}}_E25_Tomye 8 10 2/900 {{ModId}}_E25_Tomye 25 16 2/1700 {{ModId}}_E25_Tomye 8 10 2"
+      }
+    },
+    {
+      "LogName": "Egir statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Egir",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2"
+      }
+    },
+    {
+      "LogName": "Kyldo statik NPC programı",
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Kyldo",
+      "Entries": {
+        "Mon": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2"
+      }
+    },
+    {
+      "LogName": "SelimAngry boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_SelimAngry",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "SelimThinking boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_SelimThinking",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "SelimFearful boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_SelimFearful",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "SelimHappy boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_SelimHappy",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "SelimHappySpouse boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_SelimHappySpouse",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageSaek boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageSaek",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageKaelan boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageKaelan",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageFeil boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageFeil",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageL25 boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageL25",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageYejen boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageYejen",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageAfor boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageAfor",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "VillageNecale boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_VillageNecale",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "Egir boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Egir",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "Kyldo boş diyalog başlangıcı",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Kyldo",
+      "FromFile": "assets/data/blank.json"
+    }
+  ]
+}

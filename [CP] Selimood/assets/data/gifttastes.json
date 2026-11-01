@@ -1,0 +1,12 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim hediye tercihleri",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "{{ModId}}_Selim": "Bu tam da hayalimdeki evren için gereken şey! Teşekkürler, @!$h/(O)72 (O)74 (O)787 (O)18 (O)24 (O)92 (O){{ModId}}_TuhafRuhFlower/Çok teşekkürler, @. Bunu saklayacağım./(O)80 (O)395 (O)253 (O)336 (O)337 (O){{ModId}}_RuhFlower/Bunu pek kullanacağımı sanmıyorum ama düşünmen güzel./(O)348/Bunu bana vermen biraz tuhaf oldu, @...$s/(O)178/Sağ ol, @. Güzel düşünmüşsün."
+      }
+    }
+  ]
+}

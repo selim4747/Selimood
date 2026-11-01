@@ -1,0 +1,20 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim evlilik diyalogları",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_Selim",
+      "Entries": {
+        "Indoor_Day_0": "Ekranın başında kaybolmuşum. Sen gelince dünya yine gerçek oldu.$h",
+        "Indoor_Day_1": "Yeni bir harita çizdim. Sonra göstereceğim.",
+        "Indoor_Night_0": "Bu gece gökyüzü çok berrak. Birlikte bakalım mı?$3",
+        "Outdoor_Day_0": "Çiftlik işleri bitince biraz kod yazacağım. Sen nasılsın, @?",
+        "Rainy_Day_0": "Yağmur sesi ve yarım kalmış bir oyun. Güzel bir gün.$h",
+        "Rainy_Night_0": "Yağmur damlalarının ritmini sayıyorum, @. Yanımda olman iyi geliyor.$3",
+        "Good_0": "Birlikte kurduğumuz bu yaşam, yazabileceğim en iyi oyundan daha güzel.$3",
+        "Neutral_0": "Bugün kafam biraz dağınık. Fikirlerimi toparlamam gerek.",
+        "Bad_0": "Bugün kodum da ruh halim de hata veriyor. Biraz sessizliğe ihtiyacım var.$s"
+      }
+    }
+  ]
+}

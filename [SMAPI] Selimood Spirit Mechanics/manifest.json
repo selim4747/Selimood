@@ -1,0 +1,9 @@
+{
+  "Name": "Selimood Ruh Çiçeği Mekanikleri",
+  "Author": "SelimBlackstone",
+  "Version": "0.1.0",
+  "Description": "Ruh Çiçeği hasat mekanikleri. Kaynak proje ayrıca Tuhaf Ruh Çiçeği ile E25 seyahatini ve Beyaz Taş açılımını içerir.",
+  "UniqueID": "Selimood.SpiritMechanics",
+  "EntryDll": "Selimood.SpiritMechanics.dll",
+  "MinimumApiVersion": "4.3.2"
+}

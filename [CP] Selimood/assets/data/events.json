@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim 2–10 kalp hikâye etkinlikleri",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "7710002/f {{ModId}}_Selim 500/t 600 2600": "continue/viewport 50 55/farmer 48 55 1 {{ModId}}_Selim 52 55 3/skippable/pause 500/speak {{ModId}}_Selim \"Bazen yıldızlara bakıp oralarda birileri var mı diye düşünüyorum.\"/textAboveHead farmer \"Ben de merak ediyorum.\"/pause 1500/speak {{ModId}}_Selim \"Belki bir gün bunu anlatan küçük bir oyun yaparım. Şimdilik sadece hayal ediyorum.\"/end",
+        "7710004/f {{ModId}}_Selim 1000/t 600 2600": "continue/viewport 50 55/farmer 48 55 1 {{ModId}}_Selim 52 55 3/skippable/pause 500/speak {{ModId}}_Selim \"Bu çizdiğim harita, kafamda kurduğum evrenin ilk taslağı.\"/speak {{ModId}}_Selim \"Yıldız denizi, küçük adalar ve her adada yaşayan farklı topluluklar... Sence fazla mı tuhaf?\"/textAboveHead farmer \"Bence çok güzel.\"/pause 1500/speak {{ModId}}_Selim \"Teşekkürler. Bunu birine göstermek beklediğimden daha iyi hissettirdi.\"/mail {{ModId}}_Selim_AbigailNote/end",
+        "7710006/f {{ModId}}_Selim 1500/t 600 2600": "continue/viewport 50 55/farmer 48 55 1 {{ModId}}_Selim 52 55 3/skippable/pause 500/speak {{ModId}}_Selim \"Oyun prototipim çalışmıyor. Sanırım hayali uzay gemisinin güç kaynağına ihtiyacım var.\"/textAboveHead farmer \"Gerçek bir pil işine yarar mı?\"/pause 1500/speak {{ModId}}_Selim \"Belki! Bir pil bulabilirsen, bunu oyunuma nasıl uyarlayacağımı deneyeyim.\"/addQuest {{ModId}}_Selim_PowerCell/end",
+        "7710008/f {{ModId}}_Selim 2000/t 600 2600": "continue/viewport 50 55/farmer 48 55 1 {{ModId}}_Selim 52 55 3/skippable/pause 500/speak {{ModId}}_Selim \"Prototipteki küçük yıldız gemisi sonunda çalıştı, güç kaynağı sorunu da çözüldü!\"/speak {{ModId}}_Selim \"Şimdi gökyüzü haritam için parlak taşlar arıyorum. Birkaç kuvars bulmama yardım eder misin?\"/addQuest {{ModId}}_Selim_Starmap/end",
+        "7710010/f {{ModId}}_Selim 2500/t 600 2600": "continue/viewport 50 55/farmer 48 55 1 {{ModId}}_Selim 52 55 3/skippable/pause 500/speak {{ModId}}_Selim \"Oyunun ilk bölümünü bitirdim. Birlikte hayal ettiğimiz yerler artık ekranda dolaşılabilir.\"/speak {{ModId}}_Selim \"Yıldızlarda başka hayat var mı bilmiyorum. Ama kendi evrenimi seninle paylaşmak bana yetiyor.$3\"/textAboveHead farmer \"Ben de seninle bu dünyayı keşfetmek istiyorum.\"/pause 1500/speak {{ModId}}_Selim \"O zaman bu, oyunun sonu değil; birlikte başlayacağımız yeni bölüm olsun.$3\"/mail {{ModId}}_Selim_LeahNote/end"
+      }
+    }
+  ]
+}

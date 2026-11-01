@@ -1,0 +1,231 @@
+{
+  "Changes": [
+    {
+      "LogName": "Ruh çiçeği görselleri",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/RuhObjects",
+      "FromFile": "assets/images/ruh-objects.png"
+    },
+    {
+      "LogName": "Ruh çiçeği ekin görseli",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/RuhCrop",
+      "FromFile": "assets/images/ruh-crop.png"
+    },
+    {
+      "LogName": "Ruh çiçeği tohumu ve çiçeği",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_RuhSeed": {
+          "Name": "{{ModId}}_RuhSeed",
+          "DisplayName": "Ruh Çiçeği Tohumu",
+          "Description": "Ruh Çiçeği yetiştiren tohum. İlk çiçek 24 günde olgunlaşır; mevsimi yaz hariçtir.",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 1,
+          "Texture": "Mods/{{ModId}}/RuhObjects",
+          "SpriteIndex": 0,
+          "Edibility": -300
+        },
+        "{{ModId}}_RuhFlower": {
+          "Name": "{{ModId}}_RuhFlower",
+          "DisplayName": "Ruh Çiçeği",
+          "Description": "Ruh Çiçeği. Hasat zamanına göre özel sonuçlar verebilir.",
+          "Type": "Basic",
+          "Category": -80,
+          "Price": 450,
+          "Texture": "Mods/{{ModId}}/RuhObjects",
+          "SpriteIndex": 1,
+          "Edibility": 10,
+          "ContextTags": [
+            "color_purple"
+          ]
+        },
+        "{{ModId}}_TuhafRuhFlower": {
+          "Name": "{{ModId}}_TuhafRuhFlower",
+          "DisplayName": "Tuhaf Ruh Çiçeği",
+          "Description": "Bir gün fazla bekletilmiş, soluk ışık saçan Ruh Çiçeği.",
+          "Type": "Basic",
+          "Category": -80,
+          "Price": 450,
+          "Texture": "Mods/{{ModId}}/RuhObjects",
+          "SpriteIndex": 1,
+          "Edibility": 10,
+          "ContextTags": [
+            "color_purple"
+          ]
+        },
+        "{{ModId}}_RottenSeed": {
+          "Name": "{{ModId}}_RottenSeed",
+          "DisplayName": "Çürük Tohum",
+          "Description": "Her mevsim ekilebilir; bozulduğu için ne kadar beklersen bekle filiz vermez.",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 0,
+          "Texture": "TileSheets/Objects",
+          "SpriteIndex": 770,
+          "Edibility": -300
+        },
+        "{{ModId}}_DeadFlower": {
+          "Name": "{{ModId}}_DeadFlower",
+          "DisplayName": "Ölü Çiçek",
+          "Description": "Zamanında toplanmayan Ruh Çiçeği artık solup ölmüş.",
+          "Type": "Basic",
+          "Category": -80,
+          "Price": 0,
+          "Texture": "TileSheets/Objects",
+          "SpriteIndex": 458,
+          "Edibility": -300
+        },
+        "{{ModId}}_TuhafRuhSeed": {
+          "Name": "{{ModId}}_TuhafRuhSeed",
+          "DisplayName": "Tuhaf Ruh Çiçeği Tohumu",
+          "Description": "Deneme stoğu: Tuhaf Ruh Çiçeği yetiştiren tohum.",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 1,
+          "Texture": "Mods/{{ModId}}/RuhObjects",
+          "SpriteIndex": 0,
+          "Edibility": -300
+        }
+      }
+    },
+    {
+      "LogName": "Ruh çiçeği ekini",
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModId}}_RuhSeed": {
+          "Seasons": [
+            "spring",
+            "fall",
+            "winter"
+          ],
+          "DaysInPhase": [
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "RegrowDays": -1,
+          "IsRaised": false,
+          "IsPaddyCrop": false,
+          "NeedsWatering": true,
+          "HarvestItemId": "{{ModId}}_RuhFlower",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 1,
+          "HarvestMaxIncreasePerFarmingLevel": 0,
+          "ExtraHarvestChance": 0.0,
+          "HarvestMethod": "Grab",
+          "Texture": "Mods/{{ModId}}/RuhCrop",
+          "SpriteIndex": 0,
+          "CountForMonoculture": false,
+          "CountForPolyculture": true
+        },
+        "{{ModId}}_RottenSeed": {
+          "Seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+          ],
+          "DaysInPhase": [
+            999999
+          ],
+          "RegrowDays": -1,
+          "IsRaised": false,
+          "IsPaddyCrop": false,
+          "NeedsWatering": true,
+          "HarvestItemId": "{{ModId}}_DeadFlower",
+          "HarvestMinStack": 0,
+          "HarvestMaxStack": 0,
+          "HarvestMaxIncreasePerFarmingLevel": 0,
+          "ExtraHarvestChance": 0.0,
+          "HarvestMethod": "Grab",
+          "Texture": "Mods/{{ModId}}/RuhCrop",
+          "SpriteIndex": 0,
+          "CountForMonoculture": false,
+          "CountForPolyculture": false
+        },
+        "{{ModId}}_TuhafRuhSeed": {
+          "Seasons": [
+            "spring",
+            "fall",
+            "winter"
+          ],
+          "DaysInPhase": [
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "RegrowDays": -1,
+          "IsRaised": false,
+          "IsPaddyCrop": false,
+          "NeedsWatering": true,
+          "HarvestItemId": "{{ModId}}_TuhafRuhFlower",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 1,
+          "HarvestMaxIncreasePerFarmingLevel": 0,
+          "ExtraHarvestChance": 0.0,
+          "HarvestMethod": "Grab",
+          "Texture": "Mods/{{ModId}}/RuhCrop",
+          "SpriteIndex": 0,
+          "CountForMonoculture": false,
+          "CountForPolyculture": true
+        }
+      }
+    },
+    {
+      "LogName": "Selim 4 kalpte tohum gönderir",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_RuhSeedMailTrigger": {
+          "Id": "{{ModId}}_RuhSeedMailTrigger",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HEARTS Current {{ModId}}_Selim 4",
+          "Actions": [
+            "AddMail Current {{ModId}}_Selim_RuhSeedMail Tomorrow"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "LogName": "Ruh çiçeği tohumu mektubu",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "{{ModId}}_Selim_RuhSeedMail": "Selam @,^Deneyimden bir tohum çıktı. İstemeden oldu ama bence güzel bir şey. Dene bakalım.^^-Selim %item object {{ModId}}_RuhSeed 5 %%[#]Selim'den bir paket"
+      }
+    },
+    {
+      "LogName": "Selim 8 kalpte yeniden tohum gönderir",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_RuhSeedMailTrigger2": {
+          "Id": "{{ModId}}_RuhSeedMailTrigger2",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HEARTS Current {{ModId}}_Selim 8",
+          "Actions": [
+            "AddMail Current {{ModId}}_Selim_RuhSeedMail2 Tomorrow"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "LogName": "Ruh çiçeği tohumu ikinci mektup",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "{{ModId}}_Selim_RuhSeedMail2": "Selam @,^Bir parti daha tohum ayırdım. Sabırlı ol, bu bitki acele etmeyi sevmiyor.^^-Selim %item object {{ModId}}_RuhSeed 5 %%[#]Selim'den bir paket"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="9" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+  <tileset firstgid="1" name="z_selimood_path" tilewidth="16" tileheight="16" tilecount="3" columns="3">
+    <image source="selim_path_tile.png" width="48" height="16" />
+  </tileset>
+  <layer id="1" name="Back" width="9" height="5">
+    <data encoding="csv">
+1,2,3,0,0,0,0,0,0,
+2,3,1,0,0,0,0,0,0,
+2,3,1,2,3,1,2,3,1,
+1,2,3,0,0,0,0,0,0,
+2,3,1,0,0,0,0,0,0
+</data>
+  </layer>
+</map>

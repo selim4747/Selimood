@@ -1,0 +1,13 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim oyun geliştirme görevleri",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_Selim_PowerCell": "ItemDelivery/Prototip için güç kaynağı/Selim prototipi için bir pil istiyor. Onu bulup Selim'e götür./Bir pil bul ve Selim'e teslim et./{{ModId}}_Selim (O)787 1//300/-1/true/İşe yaradı! Şimdi yıldız gemisinin güç göstergesini çalıştırabilirim. Teşekkürler, @!",
+        "{{ModId}}_Selim_Starmap": "ItemDelivery/Yıldız haritası için kuvars/Selim hayalindeki yıldız haritasına ışık verecek birkaç kuvars arıyor./3 kuvars bul ve Selim'e teslim et./{{ModId}}_Selim (O)80 3//500/-1/true/Bunlar tam aradığım parıltıda. Haritam artık yıldızlı bir gökyüzüne benziyor!"
+      }
+    }
+  ]
+}

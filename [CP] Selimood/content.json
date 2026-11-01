@@ -1,0 +1,248 @@
+{
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      "LogName": "Selimood NPC temel tanımı",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_Selim": {
+          "DisplayName": "Selim",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "BirthSeason": "winter",
+          "BirthDay": "16",
+          "HomeRegion": "Town",
+          "CanBeRomanced": true,
+          "CanVisitIsland": false,
+          "SpouseAdopts": true,
+          "IntroductionsQuest": true,
+          "ItemDeliveryQuests": true,
+          "WinterStarParticipant": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_SelimHouse",
+              "Tile": {
+                "X": 16,
+                "Y": 24
+              },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Selim portre dosyası",
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Selim",
+      "FromFile": "assets/images/selim-portraits.png"
+    },
+    {
+      "LogName": "Selim sabit karakter görünümü",
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Selim",
+      "FromFile": "assets/images/selim-static-sprite.png"
+    },
+    {
+      "LogName": "Selim diyalog ve çizelge dosyalarını başlat",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Selim, Characters/schedules/{{ModId}}_Selim, Strings/schedules/{{ModId}}_Selim, Characters/Dialogue/MarriageDialogue{{ModId}}_Selim",
+      "FromFile": "assets/data/blank.json"
+    },
+    {
+      "LogName": "Selim diyalogları",
+      "Action": "Include",
+      "FromFile": "assets/data/dialogue.json"
+    },
+    {
+      "LogName": "Selim ek diyaloglar",
+      "Action": "Include",
+      "FromFile": "assets/data/dialogue-extra.json"
+    },
+    {
+      "LogName": "Selim günlük rutinleri",
+      "Action": "Include",
+      "FromFile": "assets/data/schedule.json"
+    },
+    {
+      "LogName": "Selim hediye tercihleri",
+      "Action": "Include",
+      "FromFile": "assets/data/gifttastes.json"
+    },
+    {
+      "LogName": "Selim rota diyalogları",
+      "Action": "Include",
+      "FromFile": "assets/data/schedule-dialogue.json"
+    },
+    {
+      "LogName": "Selim kalp etkinlikleri",
+      "Action": "Include",
+      "FromFile": "assets/data/events.json"
+    },
+    {
+      "LogName": "Selim görevleri",
+      "Action": "Include",
+      "FromFile": "assets/data/quests.json"
+    },
+    {
+      "LogName": "Selim kasaba mektupları",
+      "Action": "Include",
+      "FromFile": "assets/data/mail.json"
+    },
+    {
+      "LogName": "Selim festivalleri",
+      "Action": "Include",
+      "FromFile": "assets/data/festivals.json"
+    },
+    {
+      "LogName": "Selim evlilik diyalogları",
+      "Action": "Include",
+      "FromFile": "assets/data/marriage.json"
+    },
+    {
+      "LogName": "Ruh çiçeği tohumu ve ekini",
+      "Action": "Include",
+      "FromFile": "assets/data/ruh-cicegi.json"
+    },
+    {
+      "LogName": "Selim çiftlik alanı haritasını yükle",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_SelimFarm",
+      "FromFile": "assets/maps/selim_farm.tmx"
+    },
+    {
+      "LogName": "Selim ev içi haritasını yükle",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_SelimHouse",
+      "FromFile": "assets/maps/selim_room.tmx"
+    },
+    {
+      "LogName": "Selim alanı ve evi konumlarını oluştur",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_SelimFarm": {
+          "DisplayName": "Selim’in Çiftliği",
+          "DefaultArrivalTile": {
+            "X": 46,
+            "Y": 14
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_SelimFarm"
+          },
+          "CanPlantHere": true
+        },
+        "{{ModId}}_SelimHouse": {
+          "DisplayName": "Selim’in Evi",
+          "DefaultArrivalTile": {
+            "X": 17,
+            "Y": 26
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_SelimHouse"
+          },
+          "CanPlantHere": false
+        }
+      }
+    },
+    {
+      "LogName": "Standart Çiftliğe Selim patikası, çarpışma temizliği ve giriş warpı",
+      "Action": "EditMap",
+      "Target": "Maps/Farm",
+      "FromFile": "assets/maps/selim_farm_path.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 9,
+        "Height": 5
+      },
+      "ToArea": {
+        "X": 71,
+        "Y": 10,
+        "Width": 9,
+        "Height": 5
+      },
+      "PatchMode": "Overlay",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 76,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 78,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 79,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 76,
+            "Y": 14
+          },
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 14
+          },
+          "Layer": "Front",
+          "Remove": true
+        }
+      ],
+      "AddWarps": [
+        "79 14 {{ModId}}_SelimFarm 46 14"
+      ]
+    },
+    {
+      "LogName": "Selim alanından Standart Çiftliğe dönüş ve Eve giriş",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SelimFarm",
+      "AddWarps": [
+        "49 14 Farm 78 14",
+        "42 10 {{ModId}}_SelimHouse 17 26"
+      ]
+    },
+    {
+      "LogName": "Selim evinden bahçeye çıkış",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SelimHouse",
+      "AddWarps": [
+        "17 27 {{ModId}}_SelimFarm 42 11"
+      ]
+    },
+    {
+      "LogName": "E25 prototip içeriği",
+      "Action": "Include",
+      "FromFile": "assets/data/e25-prototype.json"
+    }
+  ]
+}

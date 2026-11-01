@@ -1,0 +1,19 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim rota konuşmaları",
+      "Action": "EditData",
+      "Target": "Strings/schedules/{{ModId}}_Selim",
+      "Entries": {
+        "Mon.000": "Kasaba sakin. Şu köşeyi oyunumdaki başlangıç meydanına benzetiyorum.",
+        "Tue.000": "Burada oturup etraftaki sesleri dinlemek, oyunuma ortam sesi tasarlamak için iyi fikir veriyor.",
+        "Wed.000": "Bugün yeni bir harita çizdim. Kasabanın sokakları kadar canlı olsun istiyorum.",
+        "Thu.000": "Çiftlik işleri bitince oyunuma döneceğim. İki dünyada da yapılacak iş hiç bitmiyor.$h",
+        "Fri.000": "Haftanın sonunda biraz gökyüzüne bakıp yeni fikirleri sıraya koyuyorum.",
+        "Sat.000": "Kasabada dolaşıp karakterlerimin nerede duracağını hayal ediyorum.",
+        "Sun.000": "Bugün acele etmiyorum. Biraz dinlenip kafamda yeni bir evren kuracağım.$3",
+        "Rain.000": "Yağmur yağsa da kasabaya çıktım. Damlaların ritmini sayıyorum; belki oyunumda kullanırım."
+      }
+    }
+  ]
+}

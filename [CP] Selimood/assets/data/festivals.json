@@ -1,0 +1,196 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim spring13 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 26 62 right",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim spring13 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "{{ModId}}_Selim": "Baya bir kişi yumurta avına katılacakmış. Umarım kimse benden hızlı koşmaz!$h"
+      }
+    },
+    {
+      "LogName": "Selim spring24 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 22 41 up",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim spring24 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "{{ModId}}_Selim": "Bu dansın adımlarını oyunuma eklemeyi düşünüyordum. Gerçekte izlemek çok daha güzelmiş.$h"
+      }
+    },
+    {
+      "LogName": "Selim summer11 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 43 25 up",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim summer11 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "{{ModId}}_Selim": "Çorbaya koyacağım malzeme için çok düşündüm. Oyun tasarımında da bazen tek bir seçim bütün deneyimi değiştiriyor."
+      }
+    },
+    {
+      "LogName": "Selim summer28 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 28 13 left",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim summer28 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "{{ModId}}_Selim": "Denizanalarının ışıkları... Hayalimdeki yıldız denizini buldum sanırım.$3"
+      }
+    },
+    {
+      "LogName": "Selim fall16 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 36 24 up",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim fall16 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "{{ModId}}_Selim": "Fuar alanı, oyunuma eklemek istediğim kasaba festivaline çok benziyor."
+      }
+    },
+    {
+      "LogName": "Selim fall27 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 67 36 up",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim fall27 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "{{ModId}}_Selim": "Bu labirentin arkasında mutlaka gizli bir geçit vardır. Oyun geliştiricisi refleksi.$h"
+      }
+    },
+    {
+      "LogName": "Selim winter8 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 31 74 down",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim winter8 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "{{ModId}}_Selim": "Buzda balık tutmak kolay görünmüyor. Bunu oyunumda kesin daha basit yaparım.$h"
+      }
+    },
+    {
+      "LogName": "Selim winter25 festivali",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "{{ModId}}_Selim 24 56 right",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Selim winter25 festival repliği",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "{{ModId}}_Selim": "Umarım bu gece sana güzel şeyler getirmiştir, @. Benim dileğim yıldızlara bakacak zaman bulmak.$3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    {
+      "LogName": "Selim ek diyaloglar",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Selim",
+      "Entries": {
+        "Introduction": "Ben Selim. Gündüz tarla, gece kafamdaki dünya. İkisinin de hasat zamanı var.$h",
+        "spring_Sat": "Bahar sabahı çiftlikte yürümek, en iyi kafa dinleme yöntemi. Kimse bir şey sormuyor.",
+        "spring_Sun": "Pazar günü tarlada hiçbir şey yapmamaya karar verdim. Bitkiler de bana ayak uydurdu, bence.$h",
+        "summer_Sat": "Hava o kadar sıcak ki korkuluk bile gölge arıyor. Ben de aynı yöndeyim.",
+        "summer_Sun": "Akşam serinliğinde çiftliğin kenarında oturup sessizliği dinliyorum. Cırcır böcekleri sürekli çalan bir albüm gibi.",
+        "fall_Sat": "Hasat zamanı yoruyor ama güzel yoruyor. Kabaklar benden daha iyi yetişiyor, kabul ediyorum.$h",
+        "fall_Sun": "Yaprak sesi duyunca kafamdaki gürültü azalıyor. Sonbaharın en iyi tarafı bu.",
+        "winter_Sat": "Kışın tarla boş, kafa boş... Tamam, kafa tam boş değil. Hâlâ üç farklı fikir dönüp duruyor.$h",
+        "winter_Sun": "Sobanın başında hiçbir şey yapmadan oturmak da bir iş sayılır, değil mi?",
+        "Sat2": "Cumartesi kasaba kalabalık oluyor ama ben hep kendime bir köşe buluyorum. Sen de gelirsen sorun olmaz.",
+        "Sun2": "Yalnız takılmayı severim, ama arada biri 'merhaba' deyince fena olmuyor.",
+        "Sat4": "Çiftlikte kimse konuşmuyor, o yüzden en iyi sohbetleri kendimle yapıyorum. Çoğunu da kaybediyorum.$h",
+        "Sun4": "Pazar günleri kafamdaki sesleri kısıp sadece rüzgârı dinliyorum. Sen de denemelisin.",
+        "Sat6": "Bu hafta çiftlikte hiçbir şeyi unutmadım. Bir sana selam vermeyi planlamıştım, onu da yaptım.$3",
+        "Sun6": "Bazen yalnızlık iyi geliyor ama seninle sessiz kalmak daha da iyi geliyor.",
+        "Sat8": "Eskiden her şeyi tek başıma yapardım. Şimdi bir şeyi bitirince 'Sana da göstereyim' diye düşünüyorum. Yeni bir alışkanlık.$3",
+        "Sun8": "Çiftlikte en sevdiğim köşe ağaçların altı. Bir gün oraya birlikte oturalım.",
+        "Sat10": "Sessizlik hâlâ en sevdiğim ses. Ama sen yanımdayken sessizlik daha sıcak.$3",
+        "Sun10": "Kafa dinlemek için hep yalnız kalmam gerektiğini sanırdım. Yanılmışım; senin yanında da dinleniyorum.$3",
+        "Rainy_Day_2": "Yağmurda tarlayı sulamak zorunda kalmamak hayatımın en büyük lüksü. Bunu kimseye söyleme.$h",
+        "Rainy_Day_3": "Yağmur damlaları çatıya vurunca düşünmeyi bırakıyorum. Güzel bir kaçış.",
+        "Rainy_Day_4": "Islanmak umurumda değil, yeter ki kafam sakin olsun. Şemsiyeyi evde unuttum ama olsun.",
+        "Rainy_Night_0": "Yağmurlu geceler... Işıklar kapalı, kafa açık. En verimli saatlerim bunlar.",
+        "Rainy_Night_1": "Bu gece çiftlikte kimse yok, yalnızca ben ve yağmur varız. Sohbetimiz yeterince iyi.$h"
+      }
+    }
+  ]
+}

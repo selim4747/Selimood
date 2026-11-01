@@ -1,0 +1,11 @@
+{
+  "Name": "Selimood",
+  "Author": "SelimBlackstone",
+  "Version": "0.5.0",
+  "Description": "E25 erişim/dönüşleri, düzeltilmiş NPC programları, güvenli ev warp’ları ve çiftlik çiçek standı.",
+  "UniqueID": "Selimood.Selim",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
