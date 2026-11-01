@@ -4,7 +4,7 @@ set -eu
 SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 REFS_DIR="${STARDew_PATH:-${STARDewPath:-$HOME/stardew-refs}}"
 PROJECT="$SCRIPT_DIR/Selimood.SpiritMechanics.csproj"
-OUT="$SCRIPT_DIR/bin/Release/net6.0/Selimood.SpiritMechanics.dll"
+OUT="$SCRIPT_DIR/bin/Release/net9.0/Selimood.SpiritMechanics.dll"
 
 if ! command -v dotnet >/dev/null 2>&1; then
   echo "dotnet bulunamadı. Termux'ta uygun .NET SDK'yı kur veya mevcut dotnet yolunu PATH'e ekle."

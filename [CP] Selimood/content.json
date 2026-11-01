@@ -151,24 +151,111 @@
       }
     },
     {
-      "LogName": "Standart Çiftliğe Selim patikası, çarpışma temizliği ve giriş warpı",
+      "LogName": "Selim alanından Standart Çiftliğe dönüş ve Eve giriş",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SelimFarm",
+      "AddWarps": [
+        "49 14 Farm 78 14",
+        "42 10 {{ModId}}_SelimHouse 17 26"
+      ]
+    },
+    {
+      "LogName": "Selim evinden bahçeye çıkış",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SelimHouse",
+      "AddWarps": [
+        "17 27 {{ModId}}_SelimFarm 42 11"
+      ]
+    },
+    {
+      "LogName": "E25 prototip içeriği",
+      "Action": "Include",
+      "FromFile": "assets/data/e25-prototype.json"
+    },
+    {
+      "LogName": "Standart Farm üzerine doğrudan 12 karelik siyah Selim geçişi",
       "Action": "EditMap",
       "Target": "Maps/Farm",
+      "Priority": "Late",
       "FromFile": "assets/maps/selim_farm_path.tmx",
       "FromArea": {
         "X": 0,
         "Y": 0,
-        "Width": 9,
-        "Height": 5
+        "Width": 4,
+        "Height": 3
       },
       "ToArea": {
-        "X": 71,
-        "Y": 10,
-        "Width": 9,
-        "Height": 5
+        "X": 76,
+        "Y": 12,
+        "Width": 4,
+        "Height": 3
       },
       "PatchMode": "Overlay",
       "MapTiles": [
+        {
+          "Position": {
+            "X": 76,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 78,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 79,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 76,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 78,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 79,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
         {
           "Position": {
             "X": 76,
@@ -204,10 +291,83 @@
         {
           "Position": {
             "X": 76,
+            "Y": 12
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 12
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 78,
+            "Y": 12
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 79,
+            "Y": 12
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 76,
+            "Y": 13
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 13
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 78,
+            "Y": 13
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 79,
+            "Y": 13
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 76,
             "Y": 14
           },
           "Layer": "Front",
-          "Remove": true
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
         },
         {
           "Position": {
@@ -215,34 +375,42 @@
             "Y": 14
           },
           "Layer": "Front",
-          "Remove": true
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 78,
+            "Y": 14
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
+        },
+        {
+          "Position": {
+            "X": 79,
+            "Y": 14
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_selim_black_path",
+          "SetIndex": "0"
         }
       ],
       "AddWarps": [
+        "76 12 {{ModId}}_SelimFarm 46 14",
+        "77 12 {{ModId}}_SelimFarm 46 14",
+        "78 12 {{ModId}}_SelimFarm 46 14",
+        "79 12 {{ModId}}_SelimFarm 46 14",
+        "76 13 {{ModId}}_SelimFarm 46 14",
+        "77 13 {{ModId}}_SelimFarm 46 14",
+        "78 13 {{ModId}}_SelimFarm 46 14",
+        "79 13 {{ModId}}_SelimFarm 46 14",
+        "76 14 {{ModId}}_SelimFarm 46 14",
+        "77 14 {{ModId}}_SelimFarm 46 14",
+        "78 14 {{ModId}}_SelimFarm 46 14",
         "79 14 {{ModId}}_SelimFarm 46 14"
       ]
-    },
-    {
-      "LogName": "Selim alanından Standart Çiftliğe dönüş ve Eve giriş",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_SelimFarm",
-      "AddWarps": [
-        "49 14 Farm 78 14",
-        "42 10 {{ModId}}_SelimHouse 17 26"
-      ]
-    },
-    {
-      "LogName": "Selim evinden bahçeye çıkış",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_SelimHouse",
-      "AddWarps": [
-        "17 27 {{ModId}}_SelimFarm 42 11"
-      ]
-    },
-    {
-      "LogName": "E25 prototip içeriği",
-      "Action": "Include",
-      "FromFile": "assets/data/e25-prototype.json"
     }
   ]
 }

@@ -454,6 +454,14 @@
       }
     },
     {
+      "LogName": "Egir’den alınan Beyaz Taş üretim tarifi",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_WhiteStone": "(O){{ModId}}_WhiteStonePiece 240/Home/{{ModId}}_WhiteStone 1/false/none/Beyaz Taş"
+      }
+    },
+    {
       "LogName": "E25 Angry statik sprite",
       "Action": "Load",
       "Target": "Characters/{{ModId}}_SelimAngry",
@@ -495,6 +503,17 @@
           "Type": "Basic",
           "Category": -12,
           "Price": 40,
+          "Texture": "TileSheets/Objects",
+          "SpriteIndex": 390,
+          "Edibility": -300
+        },
+        "{{ModId}}_WhiteStone": {
+          "Name": "{{ModId}}_WhiteStone",
+          "DisplayName": "Beyaz Taş",
+          "Description": "240 Beyaz Taş Parçası kullanılarak üretilen yoğun, soluk bir taş.",
+          "Type": "Basic",
+          "Category": -12,
+          "Price": 240,
           "Texture": "TileSheets/Objects",
           "SpriteIndex": 390,
           "Edibility": -300
@@ -587,6 +606,30 @@
               "Stock": -1
             }
           ]
+        },
+        "{{ModId}}_EgirMarket": {
+          "Owners": [
+            {
+              "Name": "{{ModId}}_Egir",
+              "Portrait": "{{ModId}}_Egir",
+              "Dialogues": [
+                {
+                  "Id": "{{ModId}}_EgirMarketDefault",
+                  "Dialogue": "Beyaz Taş tarifini burada bulabilirsin."
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_WhiteStoneRecipe",
+              "ItemId": "{{ModId}}_WhiteStone",
+              "ObjectInternalName": "{{ModId}}_WhiteStone",
+              "IsRecipe": true,
+              "Price": 240,
+              "AvailableStock": 1
+            }
+          ]
         }
       }
     },
@@ -600,7 +643,7 @@
         "1 16 {{ModId}}_E25_Library 20 1",
         "45 5 {{ModId}}_E25_Heyer 4 16",
         "25 1 {{ModId}}_E25_Entrance 21 11",
-        "46 14 {{ModId}}_SelimFarm 25 16"
+        "47 14 {{ModId}}_SelimFarm 25 16"
       ]
     },
     {
@@ -608,7 +651,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_SelimFarm",
       "AddWarps": [
-        "25 16 {{ModId}}_E25_Hub 46 14"
+        "25 16 {{ModId}}_E25_Hub 47 14"
       ]
     },
     {
@@ -845,14 +888,14 @@
       "Action": "EditData",
       "Target": "Characters/schedules/{{ModId}}_VillageFeil",
       "Entries": {
-        "Mon": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "Tue": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "Wed": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "Thu": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "Fri": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "Sat": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "Sun": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
-        "rain": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2"
+        "Mon": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 6 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 6 26 2"
       }
     },
     {
@@ -860,14 +903,14 @@
       "Action": "EditData",
       "Target": "Characters/schedules/{{ModId}}_VillageL25",
       "Entries": {
-        "Mon": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "Tue": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "Wed": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "Thu": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "Fri": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "Sat": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "Sun": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2",
-        "rain": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 14 2/1700 {{ModId}}_E25_Tomye 29 10 2"
+        "Mon": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2",
+        "rain": "610 {{ModId}}_E25_Tomye 29 10 2/900 {{ModId}}_E25_Tomye 36 16 2/1700 {{ModId}}_E25_Tomye 29 10 2"
       }
     },
     {
@@ -920,14 +963,14 @@
       "Action": "EditData",
       "Target": "Characters/schedules/{{ModId}}_Egir",
       "Entries": {
-        "Mon": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "Tue": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "Wed": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "Thu": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "Fri": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "Sat": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "Sun": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
-        "rain": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2"
+        "Mon": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 40 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 40 26 2"
       }
     },
     {
@@ -935,14 +978,14 @@
       "Action": "EditData",
       "Target": "Characters/schedules/{{ModId}}_Kyldo",
       "Entries": {
-        "Mon": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "Tue": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "Wed": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "Thu": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "Fri": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "Sat": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "Sun": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
-        "rain": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 14 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2"
+        "Mon": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Tue": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Wed": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Thu": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Fri": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Sat": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "Sun": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2",
+        "rain": "610 {{ModId}}_E25_Tomye 20 26 2/900 {{ModId}}_E25_Tomye 36 16 2/1500 {{ModId}}_E25_Tomye 25 16 2/1900 {{ModId}}_E25_Tomye 20 26 2"
       }
     },
     {

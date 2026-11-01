@@ -11,7 +11,7 @@ Selimood.SpiritMechanics.dll
 Genellikle şu klasörde oluşur:
 
 ```text
-bin/Release/net6.0/Selimood.SpiritMechanics.dll
+bin/Release/net9.0/Selimood.SpiritMechanics.dll
 ```
 
 Android’e `.cs` veya `.csproj` dosyasını koymak modun çalışması için yeterli değildir. Android SMAPI’nin yüklediği dosya derlenmiş `.dll` dosyasıdır.
@@ -36,7 +36,7 @@ Windows örneği:
 5. Şu DLL’yi al:
 
 ```text
-bin/Release/net6.0/Selimood.SpiritMechanics.dll
+bin/Release/net9.0/Selimood.SpiritMechanics.dll
 ```
 
 6. Android telefondaki eski DLL’nin yerine bu yeni DLL’yi kopyala. `manifest.json` ve diğer mod dosyaları aynı klasörde kalmalı.
@@ -113,4 +113,4 @@ dosyasını yeni derlenen DLL ile değiştir. `[CP] Selimood` klasörüne dokunm
 6. Selim çiftliğine `(25,16)` civarında dönmelisin.
 7. Çalışmazsa SMAPI logunu kontrol et.
 
-İlk denemede `RequireWhiteStoneUnlock=false` bırakıldığı için 240 Beyaz Taş beklenmez. 240 taş kilidini test etmek için helper modunun oluşturduğu `config.json` dosyasında bu değeri `true` yapabilirsin.
+`RequireWhiteStoneUnlock` varsayılan olarak `true` durumundadır. İlk Tuhaf Ruh Çiçeği kullanımı ücretsizdir; sonraki kalıcı seyahat için toplam 240 Beyaz Taş Parçası gerekir. Helper değiştiği için eski DLL yerine yeniden derlenen DLL kullanılmalıdır.

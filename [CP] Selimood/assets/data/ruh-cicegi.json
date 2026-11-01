@@ -58,8 +58,8 @@
         },
         "{{ModId}}_RottenSeed": {
           "Name": "{{ModId}}_RottenSeed",
-          "DisplayName": "Çürük Tohum",
-          "Description": "Her mevsim ekilebilir; bozulduğu için ne kadar beklersen bekle filiz vermez.",
+          "DisplayName": "Turfanda Tohumu",
+          "Description": "E25’in beşinci mevsimi Turfanda’da yetişen, çürümüş ama özel bir tohum. E25 her zaman Turfanda mevsimindedir.",
           "Type": "Seeds",
           "Category": -74,
           "Price": 0,
